@@ -20,7 +20,22 @@ Due to the size of the models and datasets (greater than 1GB), **we are using Go
 5. **Load Models:** Loads Shap-E pre-trained models (`text300M` and `transmitter`) and saves their state_dicts.
 6. **Fine-tuning/Inference Setup:** Prepares configuration for sampling 3D meshes from text prompts.
 
+## 📰 Screenshots
+
+| Screenshot 1 | Screenshot 2 | Screenshot 3 |
+|:------------:|:------------:|:------------:|
+| ![Screenshot 1](Screenshot1.jpeg) | ![Screenshot 2](Screenshot2.jpeg) | ![Screenshot 3](Screenshot3.jpeg) |
+
 ## ⚠️ Note
 
+- Make sure you have access permission to the shared Google Drive link.
 - Ensure sufficient free space in your Google Drive if you copy the resources.
+
+## 📄 License
+
+[Specify your project's license here]
+
+---
+
+Feel free to open an issue if you face any problems!
 
