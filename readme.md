@@ -89,10 +89,10 @@ print("✅ All downloads completed.")
 ## ⚠️ Note
 - Ensure sufficient free space in your Google Drive if you copy the resources.
 > **Note:**
-> .zip $x \approx y$ 6.5GB
-> Total file - dataset : $x \approx y$ 8.9GB
-> Dataset(Complete) $x \approx y$ 2.49 TB
-> Dataser(Used) $x \approx y$ 9.3 GB (2 Latents of 4.5GB)
+> \n.zip $x \approx y$ 6.5GB
+> \nTotal file - dataset : $x \approx y$ 8.9GB
+> \nDataset(Complete) $x \approx y$ 2.49 TB
+> \nDataser(Used) $x \approx y$ 9.3 GB (2 Latents of 4.5GB)
 ---
 
 Feel free to open an issue if you face any problems!
