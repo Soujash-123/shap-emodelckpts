@@ -21,6 +21,20 @@ Due to the size of the models and datasets (greater than 1GB), **we are using Go
 6.  **Load Fine-Tuned Models:** Loads Shap-E fine-tuned models (`fine_tuned_shape_with825kdata` and `transmitter`) and saves their state_dicts for comparison.
 7. **Fine-tuning/Inference Setup:** Prepares configuration for sampling 3D meshes from text prompts.
 
+## 🖥️ System Specifications Used
+
+During development and testing, the following system setup was used:
+
+- **CPU:** Intel Core i5 11th Gen
+- **No. of Processors Assigned** 16 (Virtual Machine)
+- **GPU:** NVIDIA RTX 3060 (12GB VRAM)
+- **RAM:** 32GB DDR4
+- **Storage:** 512GB NVMe SSD
+- **Operating System:** Ubuntu 22.04 LTS (Running on Virtual Machine)
+- **Python Version:** 3.10
+
+> **Note:** Although training on this setup was possible, for large-scale training and faster results, higher-end GPUs and more RAM are recommended.
+
 ## Dataset Link
 https://huggingface.co/datasets/tiange/Cap3D/tree/main/misc/ShapELatentCode_zips
 
