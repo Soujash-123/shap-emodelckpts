@@ -87,14 +87,12 @@ print("✅ All downloads completed.")
 | ![Screenshot 1](Screenshot1.jpeg) | ![Screenshot 2](Screenshot2.jpeg) | ![Screenshot 3](Screenshot3.jpeg) |
 
 ## ⚠️ Note
-
-- Make sure you have access permission to the shared Google Drive link.
 - Ensure sufficient free space in your Google Drive if you copy the resources.
-
-## 📄 License
-
-[Specify your project's license here]
-
+> **Note:**
+> .zip $x \approx y$ 6.5GB
+> Total file - dataset : $x \approx y$ 8.9GB
+> Dataset(Complete) $x \approx y$ 2.49 TB
+> Dataser(Used) $x \approx y$ 9.3 GB (2 Latents of 4.5GB)
 ---
 
 Feel free to open an issue if you face any problems!
