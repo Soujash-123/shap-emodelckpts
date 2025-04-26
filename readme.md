@@ -15,10 +15,56 @@ Due to the size of the models and datasets (greater than 1GB), **we are using Go
 
 1. **Clone Repository:** Clones the Cap3D GitHub repository.
 2. **Setup Environment:** Checks Python version, installs required libraries like Gradio.
-3. **Download Models:** Uses `gdown` to download large model files from Google Drive.
+3. **Download Models:** Uses `gdown` to download large fine-tuned model files from Google Drive.
 4. **Model Preparation:** Moves model checkpoints to appropriate folders and cleans up.
-5. **Load Models:** Loads Shap-E pre-trained models (`text300M` and `transmitter`) and saves their state_dicts.
-6. **Fine-tuning/Inference Setup:** Prepares configuration for sampling 3D meshes from text prompts.
+5. **Load Models:** Loads Shap-E pre-trained models (`text300M` and `transmitter`) and saves their state_dicts for comparison.
+6.  **Load Fine-Tuned Models:** Loads Shap-E fine-tuned models (`fine_tuned_shape_with825kdata` and `transmitter`) and saves their state_dicts for comparison.
+7. **Fine-tuning/Inference Setup:** Prepares configuration for sampling 3D meshes from text prompts.
+
+## Dataset Link
+https://huggingface.co/datasets/tiange/Cap3D/tree/main/misc/ShapELatentCode_zips
+
+## 📢 Download Additional Data from HuggingFace
+
+Install Hugging Face libraries:
+```bash
+pip install huggingface_hub
+```
+
+Download one file manually:
+```bash
+huggingface-cli download tiange/Cap3D --repo-type dataset misc/ShapELatentCode_zips/compressed_code_00.zip
+```
+
+Download multiple files programmatically:
+```python
+import os
+from huggingface_hub import hf_hub_download
+
+# Define repo details
+repo_id = "tiange/Cap3D"
+repo_type = "dataset"
+base_dir = "misc/ShapELatentCode_zips"
+local_dir = "./example_material/Cap3D_latentcodes"
+
+# Create the local target directory if it doesn't exist
+os.makedirs(local_dir, exist_ok=True)
+
+# List of known zip files (you can expand this list as needed)
+filenames = [
+    f"{base_dir}/compressed_code_{i:02d}.zip" for i in range(20)
+]
+
+# Download loop
+for filename in filenames:
+    print(f"Downloading {filename}...")
+    file_path = hf_hub_download(repo_id=repo_id, filename=filename, repo_type=repo_type, local_dir=local_dir)
+    print(f"Saved to {file_path}")
+
+print("✅ All downloads completed.")
+```
+
+
 
 ## 📰 Screenshots
 
